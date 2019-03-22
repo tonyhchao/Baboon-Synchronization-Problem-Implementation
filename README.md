@@ -12,11 +12,11 @@ Synchronization: There is a deep canyon somewhere in Kruger National Park, South
 3.	A continuing stream of baboons crossing in one direction should not bar baboons going the other way indefinitely (no starvation). Solve this requirement such that the FIFO order is preserved. That is, a baboon trying to cross to the left/right that arrives earlier than a baboon trying to cross in the opposite direction gets on the rope first.
 
 Implementation Specifications
-•	Implement the behavior of the baboons in C using the Pthreads library.
-•	Make use of an input parameter that indicates the time required for a baboon to cross the canyon. Assume, all the baboons require the same time to cross the canyon.
-•	Overall, this problem deals with the access to a common resource, the rope. Access to the rope here means access for the threads to the critical section of your program, and how long a baboon takes to cross the canyon is indicated by the amount of sleep time (in seconds), which is the amount of thread sleep time in the critical section of your program.
+Implement the behavior of the baboons in C using the Pthreads library.
+Make use of an input parameter that indicates the time required for a baboon to cross the canyon. Assume, all the baboons require the same time to cross the canyon.
+Overall, this problem deals with the access to a common resource, the rope. Access to the rope here means access for the threads to the critical section of your program, and how long a baboon takes to cross the canyon is indicated by the amount of sleep time (in seconds), which is the amount of thread sleep time in the critical section of your program.
 
 Input
 The input to the program should be provided in an input _le. The input _le name and the time (in seconds) required for a baboon to cross the canyon have to be command-line parameters.
 The format of the input file is given below.
-•	Line 1: L,R,R,R,R,R,L,L,R (a sequence of alphabets L (meaning left) and R (meaning right) separated by a comma, that indicate the side of the rope a baboon is trying to cross the rope from). Please note that, the delimiter here is a ',' (comma), and it does not appear after the last symbol in the first line of the file.
+Line 1: L,R,R,R,R,R,L,L,R (a sequence of alphabets L (meaning left) and R (meaning right) separated by a comma, that indicate the side of the rope a baboon is trying to cross the rope from). Please note that, the delimiter here is a ',' (comma), and it does not appear after the last symbol in the first line of the file.
